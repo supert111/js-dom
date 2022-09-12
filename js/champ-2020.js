@@ -17,8 +17,8 @@ const findTeam = function (event) {
     }
     
     history.pushState(null, null, pathname);
-    console.log(history.pushState(null, null, pathname))
-    console.log(history.replaceState(null, null, pathname))
+    //console.log(history.pushState(null, null, js-dom/pathname))
+    //console.log(history.replaceState(null, null, js-dom/pathname))
     console.log(pathname)
 };
 
@@ -28,7 +28,7 @@ const contetntMarkup = (team) => allTeams.map(el => {
     if (el.href === team) {
         return `<h1 class='title__h1'>${el.alt}</h1>
         <p class='final__result'>${el.result}</p>
-        <img class='images__style' src='js-dom/images/${el.img}' alt=${el.alt}></img>
+        <img class='images__style' src='images/${el.img}' alt='${el.alt}'></img>
         <p class='description__game'>${el.description}</p>`;
     }
 }).join("");
