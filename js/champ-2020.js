@@ -16,10 +16,7 @@ const findTeam = function (event) {
         listWinnersTeams.addEventListener('click', findTeam);
     }
     
-    history.pushState(null, null, pathname);
-    //console.log(history.pushState(null, null, js-dom/pathname))
-    //console.log(history.replaceState(null, null, js-dom/pathname))
-    console.log(pathname)
+    // history.pushState(null, null, pathname);
 };
 
 listWinnersTeams.addEventListener('click', findTeam);
